@@ -1,4 +1,7 @@
 .meals {
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
   max-width: 60rem;
   width: 90%;
   margin: 2rem auto;
@@ -10,7 +13,19 @@
   margin: 0;
   padding: 0;
 }
-
+.spinner {
+  height: 40px;
+  width: 40px;
+  border: 6px solid rgb(0, 0, 0);
+  border-color: white transparent white transparent;
+  border-radius: 50%;
+  animation: spin 1.3s ease infinite;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
 @keyframes meals-appear {
   from {
     opacity: 0;

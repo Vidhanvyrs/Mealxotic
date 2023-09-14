@@ -27,6 +27,13 @@
   object-fit: cover;
   transform: rotateZ(-5deg) translateY(-6rem) translateX(-7rem);
 }
+
+@media (max-width: 700px){
+  .main-image img{
+    width: 140%;
+  }
+} 
+
 .fade-in {
   animation: fade-in 1s ease-in-out;
 }
